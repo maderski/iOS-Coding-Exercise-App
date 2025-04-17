@@ -18,7 +18,7 @@ struct iOS_Coding_Exercise_App: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DisplayItemsView()
         }
     }
 }
