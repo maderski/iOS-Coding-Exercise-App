@@ -31,7 +31,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		7D5094282DB087CC006737E2 /* Exceptions for "KMP Shared Libraries" folder in "iOS Coding Exercise App" target */ = {
+		7D5094382DB17270006737E2 /* Exceptions for "KMP Shared Libraries" folder in "iOS Coding Exercise App" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				shared.xcframework,
@@ -41,7 +41,7 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		7D5094292DB087CC006737E2 /* Exceptions for "KMP Shared Libraries" folder in "Embed Frameworks" phase from "iOS Coding Exercise App" target */ = {
+		7D5094392DB17270006737E2 /* Exceptions for "KMP Shared Libraries" folder in "Embed Frameworks" phase from "iOS Coding Exercise App" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			attributesByRelativePath = {
 				shared.xcframework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
@@ -62,8 +62,8 @@
 		7D5094232DB08775006737E2 /* KMP Shared Libraries */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				7D5094282DB087CC006737E2 /* Exceptions for "KMP Shared Libraries" folder in "iOS Coding Exercise App" target */,
-				7D5094292DB087CC006737E2 /* Exceptions for "KMP Shared Libraries" folder in "Embed Frameworks" phase from "iOS Coding Exercise App" target */,
+				7D5094382DB17270006737E2 /* Exceptions for "KMP Shared Libraries" folder in "iOS Coding Exercise App" target */,
+				7D5094392DB17270006737E2 /* Exceptions for "KMP Shared Libraries" folder in "Embed Frameworks" phase from "iOS Coding Exercise App" target */,
 			);
 			path = "KMP Shared Libraries";
 			sourceTree = "<group>";
