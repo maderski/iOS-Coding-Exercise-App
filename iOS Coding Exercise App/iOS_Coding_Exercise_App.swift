@@ -10,7 +10,7 @@ import shared
 
 
 @main
-struct iOS_Coding_Exercise_AppApp: App {
+struct iOS_Coding_Exercise_App: App {
     
     init() {
         KoinHelper.shared.doInitKoin(appModules: [])
