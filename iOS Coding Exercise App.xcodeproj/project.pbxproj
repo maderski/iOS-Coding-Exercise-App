@@ -11,18 +11,15 @@
 		7D5094012DB0491B006737E2 /* KMPNativeCoroutinesCombine in Frameworks */ = {isa = PBXBuildFile; productRef = 7D5094002DB0491B006737E2 /* KMPNativeCoroutinesCombine */; };
 		7D5094032DB0491B006737E2 /* KMPNativeCoroutinesCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7D5094022DB0491B006737E2 /* KMPNativeCoroutinesCore */; };
 		7D5094052DB0491B006737E2 /* KMPNativeCoroutinesRxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7D5094042DB0491B006737E2 /* KMPNativeCoroutinesRxSwift */; };
-		7D5094202DB08580006737E2 /* shared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D50941F2DB08580006737E2 /* shared.xcframework */; };
-		7D5094212DB08580006737E2 /* shared.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D50941F2DB08580006737E2 /* shared.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7D5094222DB08580006737E2 /* Embed Frameworks */ = {
+		7D5094272DB087CC006737E2 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7D5094212DB08580006737E2 /* shared.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,13 +28,44 @@
 
 /* Begin PBXFileReference section */
 		7D5093BE2DAF3A53006737E2 /* iOS Coding Exercise App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Coding Exercise App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D50941F2DB08580006737E2 /* shared.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = shared.xcframework; path = "../KMP-Coding-Exercise-Network/shared/build/XCFrameworks/release/shared.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7D5094282DB087CC006737E2 /* Exceptions for "KMP Shared Libraries" folder in "iOS Coding Exercise App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				shared.xcframework,
+			);
+			target = 7D5093BD2DAF3A53006737E2 /* iOS Coding Exercise App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		7D5094292DB087CC006737E2 /* Exceptions for "KMP Shared Libraries" folder in "Embed Frameworks" phase from "iOS Coding Exercise App" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			attributesByRelativePath = {
+				shared.xcframework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
+			};
+			buildPhase = 7D5094272DB087CC006737E2 /* Embed Frameworks */;
+			membershipExceptions = (
+				shared.xcframework,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7D5093C02DAF3A53006737E2 /* iOS Coding Exercise App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "iOS Coding Exercise App";
+			sourceTree = "<group>";
+		};
+		7D5094232DB08775006737E2 /* KMP Shared Libraries */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7D5094282DB087CC006737E2 /* Exceptions for "KMP Shared Libraries" folder in "iOS Coding Exercise App" target */,
+				7D5094292DB087CC006737E2 /* Exceptions for "KMP Shared Libraries" folder in "Embed Frameworks" phase from "iOS Coding Exercise App" target */,
+			);
+			path = "KMP Shared Libraries";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -48,7 +76,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D5094012DB0491B006737E2 /* KMPNativeCoroutinesCombine in Frameworks */,
-				7D5094202DB08580006737E2 /* shared.xcframework in Frameworks */,
 				7D5093FF2DB0491B006737E2 /* KMPNativeCoroutinesAsync in Frameworks */,
 				7D5094052DB0491B006737E2 /* KMPNativeCoroutinesRxSwift in Frameworks */,
 				7D5094032DB0491B006737E2 /* KMPNativeCoroutinesCore in Frameworks */,
@@ -78,7 +105,7 @@
 		7D5093CC2DAF3C3E006737E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7D50941F2DB08580006737E2 /* shared.xcframework */,
+				7D5094232DB08775006737E2 /* KMP Shared Libraries */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,7 +120,7 @@
 				7D5093BA2DAF3A53006737E2 /* Sources */,
 				7D5093BB2DAF3A53006737E2 /* Frameworks */,
 				7D5093BC2DAF3A53006737E2 /* Resources */,
-				7D5094222DB08580006737E2 /* Embed Frameworks */,
+				7D5094272DB087CC006737E2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
