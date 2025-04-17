@@ -6,17 +6,14 @@
 //
 
 import SwiftUI
-//#if !DEBUG_PREVIEW
 import shared
-//#endif
+
 
 @main
 struct iOS_Coding_Exercise_AppApp: App {
     
     init() {
-        //#if !DEBUG_PREVIEW
         KoinHelper.shared.doInitKoin(appModules: [])
-        //#endif
     }
     
     var body: some Scene {
