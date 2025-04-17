@@ -8,7 +8,7 @@ import SwiftUI
 import shared
 import KMPNativeCoroutinesAsync
 
-extension ContentView {
+extension DisplayItemsView {
     @Observable
     class ViewModel {
         private(set) var isLoading = false
