@@ -19,21 +19,21 @@ extension ContentView {
         func fetchData() async {
             isLoading = true
             Task { @MainActor in
-                        let result = await asyncResult(for: itemRepository.getAllItems())
-                        
-                        switch result {
-                        case .success(let data):
-                            itemGroups = data.map { (key, value) in
-                                ItemGroup(listId: key.intValue, items: value)
-                            }.sorted { $0.listId < $1.listId }
-
-                        case .failure(let error):
-                            print("Failed to fetch items: \(error)")
-                            itemGroups = []
-                        }
-
-                        isLoading = false
-                    }
+                let result = await asyncResult(for: itemRepository.getAllItems())
+                
+                switch result {
+                case .success(let data):
+                    itemGroups = data.map { (key, value) in
+                        ItemGroup(listId: key.intValue, items: value)
+                    }.sorted { $0.listId < $1.listId }
+                    
+                case .failure(let error):
+                    print("Failed to fetch items: \(error)")
+                    itemGroups = []
+                }
+                
+                isLoading = false
+            }
         }
     }
 }
